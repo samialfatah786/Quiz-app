@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<style>
+
+
+    p{
+        padding: 50px;
+        margin-top: 25px;
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(52, 164, 255);
+        
+
+
+    }
+
+    .dm{
+        color: rgb(44, 138, 214);
+        padding: 5px 12px 15px; 
+        margin: 20px;
+        cursor: pointer;
+        font-size: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+        
+ 
+
+
+
+
+
+    }
+    
+
+
+button{
+    color: rgb(15, 57, 146);
+    background-color: rgb(58, 124, 168);
+    cursor: pointer;
+    font-size: 50px;
+     border: 5px solid white;
+border-top-right-radius: 30px;
+border-color: rgb(20, 151, 190) rgb(4, 81, 87);
+}
+
+
+button:hover{
+    background-color: transparent;
+}
+
+
+
+
+
+
+</style>
+
+<body onload="nextQuestion()">
+
+    <div style="text-align: center;">
+   
+    
+    <div class="dm">
+        
+        <p id="ques"></p>
+
+        <br>
+
+        <input  style=" cursor: pointer;" onclick="clicked()" value="1" name="options" type="radio">
+        <label id="opt1"></label>
+<br>
+<br>
+<br>
+
+        
+        <input style=" cursor: pointer;"  onclick="clicked()" value="2" name="options" type="radio">
+        <label id="opt2"></label>
+
+        <br>
+        <br>
+        <br>
+
+
+        <input style=" cursor: pointer;" onclick="clicked()" value="3" name="options" type="radio">
+        <label id="opt3"></label>
+
+        <br>
+        <br>
+        <br>
+
+        <button id="btn" disabled onclick="nextQuestion()">next</button>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
